@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: black;
+}
+
+.encabezado {
+    z-index: 1;
+    position: fixed;
+    background-color: rgb(150, 150, 150);
+    color: #98fb98;
+    width: 100%;
+    height: 64px;
+    top: 0;
+    margin: 0 0;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.btnmenu {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    margin: 14px;
+    background-color: transparent;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.btnmenu:hover {
+   border-color: rgb(32, 32, 32);
+   background-color: #98fb98;
+}
+
+.view-boxes {
+    width: 30px;
+    height: 30px;
+}
+
+.contacto {
+    position: absolute;
+    right: 0;
+    text-align: right;
+    vertical-align: middle;
+    width: fit-content;
+    height: 16px;
+    margin: 24px 16px 24px 0px;
+    color: #98fb98;
+}
+
+.titulo {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 64px;
+    font-size: 48px;
+    font-weight: bolder;
+    margin: 0 auto;
+}
+
+h1 {
+    color: black;
+    font-size: 1,5rem;
+}
+
+nav {
+    position: relative;
+    top: 64px;
+    width: auto;
+    height: calc(100vh-64px);
+}
+
+.barrasuperior {
+    position: fixed;
+    width: 100%;
+    height: auto;
+}
+
+.txtbarrasuperior {
+    position: relative;
+    max-width: 900px;
+    height: auto;
+    margin: 20px auto;
+    padding: 14px;
+    background-color: azure;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.ifcnav {
+    width: 100%;
+    height: auto;
+}
+
+.barraherramientas {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    bottom: 40px;
+}
+
+.containerherramientas {
+    position: relative;
+    max-width: 600px;
+    height: 60px;
+    margin: 0 auto;
+    background-color: azure;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.herr1 {
+    width: 200px;
+    left: 0;
+    border-right: 2px solid black;
+    margin: 0 auto;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.herr2 {
+    width: 400px;
+    right: 0;
+    border-left: 2px solid black;
+    margin: 0 auto;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btnherr {
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: azure;
+    box-shadow: 0px 0px 20px #98fb98;
+    transition: box-shadow;
+}
+
+.btnherr:hover {
+    box-shadow: 0px 0px 5px inset #98fb98;
+}
