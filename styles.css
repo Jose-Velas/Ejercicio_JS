@@ -38,6 +38,7 @@ body {
    border-color: rgb(32, 32, 32);
    background-color: #98fb98;
 }
+/*cambiar el fondo por el relleno del svg*/
 
 .view-boxes {
     width: 30px;
@@ -62,7 +63,8 @@ body {
     text-align: center;
     width: 100vw;
     height: 64px;
-    font-size: 48px;
+    padding: 16px;
+    font-size: 24px;
     font-weight: bolder;
     margin: 0 auto;
 }
