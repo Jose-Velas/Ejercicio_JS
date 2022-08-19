@@ -62,7 +62,8 @@ body {
     text-align: center;
     width: 100vw;
     height: 64px;
-    font-size: 48px;
+    padding: 16px;
+    font-size: 24px;
     font-weight: bolder;
     margin: 0 auto;
 }
@@ -84,6 +85,7 @@ nav {
     width: 100%;
     height: auto;
 }
+/*dar transparencia al fondo para que se vea el IFC*/
 
 .txtbarrasuperior {
     position: relative;
@@ -113,6 +115,7 @@ iframe {
     height: 60px;
     bottom: 40px;
 }
+/*dar transparencia al fondo para que se vea el IFC*/
 
 .containerherramientas {
     position: relative;
