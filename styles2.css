@@ -101,6 +101,12 @@ nav {
     height: auto;
 }
 
+iframe {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
 .barraherramientas {
     position: fixed;
     width: 100%;
