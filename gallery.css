@@ -45,17 +45,6 @@ body {
     height: 30px;
 }
 
-.contacto {
-    position: absolute;
-    right: 0;
-    text-align: right;
-    vertical-align: middle;
-    width: fit-content;
-    height: 16px;
-    margin: 24px 16px 24px 0px;
-    color: #98fb98;
-}
-
 .titulo {
     position: absolute;
     display: flex;
@@ -67,6 +56,16 @@ body {
     font-size: 24px;
     font-weight: bolder;
     margin: 0 auto;
+}
+
+@media (max-width: 700px) {
+    .btnmenu {
+        right: 12px;
+    }
+
+    .titulo {
+        justify-content: left;
+     }
 }
 
 h1 {
@@ -96,25 +95,12 @@ nav {
 .conteiner {
     display: flex;
     flex-direction: row;
-    width: auto;
-    height: auto;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
-.projectnav {
-    position: relative;
-    border: 0;
-    display: flex;
-    flex-direction: row;
-    width: auto;
-    height: auto;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-/*repetir tantas veces como proyectos*/
-.card01 {
+.card00 {
     width: 200px;
     height: 112px;
     margin: 10px;
@@ -124,12 +110,11 @@ nav {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    box-shadow: 10px 5px 10px 0px rgba(180, 180, 180, 0.4);
+    box-shadow: 10px 5px 10px 0px rgba(128, 128, 128, 0.5);;
     overflow: hidden;
     transition: border, box-shadow, border-radius, width, 1s ease-in-out;
 }
-/*repetir tantas veces como proyectos*/
-   
+
 .card-info {
     position: relative;
     top: 68px;
@@ -150,7 +135,7 @@ nav {
     left: 200px;
     width: 300px;
     height: 200px;
-    display: block;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     text-align: center;
@@ -165,18 +150,18 @@ nav {
     overflow: hidden;
 }
 
-.card01:hover {
+.card00:hover {
     border-radius: 10px;
-    box-shadow: outset 4px 8px rgba(180, 180, 180, 0.4);
+    box-shadow: outset 4px 8px rgba(128, 128, 128, 0.5);
     width: 300px;
     height: 200px;
 }
 
-.card01:hover .card-info {
+.card00:hover .card-info {
     transform: translateX(-100%);
 }
    
-.card01:hover .card-bio {
+.card00:hover .card-bio {
     transform: translatex(-200px);
     opacity: 1;
 }
@@ -184,6 +169,7 @@ nav {
 .ifcbtn {
     position: absolute;
     margin: 10px auto;
+    margin-top: 160px;
     height: 20px;
     width: 40px;
     border: 2px solid black;
